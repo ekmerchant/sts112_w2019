@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Policies</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STS 112: Visualizing Society</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Description</a>
+</li>
+<li>
+  <a href="policies.html">Policies</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li>
+  <a href="mailto:ekmerchant@ucdavis.edu">Email Prof. M</a>
+</li>
+<li>
+  <a href="http://ekmerchant.youcanbook.me">Meet with Prof. M</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Policies</h1>
+
+</div>
+
+
+<div id="communication" class="section level3">
+<h3>Communication</h3>
+<p>I will hold <strong>weekly office hours on Wednesdays at 10-11 and Thursdays at 11-12 in SSH 1252</strong>. If these times do not work for you, please <a href="http://ekmerchant.youcanbook.me">schedule a meeting</a> at another time. You may also <a href="mailto:ekmerchant@ucdavis.edu">email me</a> to discuss any aspect of this course. Please put the course number in the subject line of the email. I will generally respond within one business day.</p>
+</div>
+<div id="expectations" class="section level3">
+<h3>Expectations</h3>
+<p>The work for this course should take you about 16 hours per week on average, including time in class. I expect that you will attend all class meetings and arrive having done the required reading and completing any other preparatory work. Attendance and participation will account for 10% of your grade, so any absence will reduce your final grade by 0.5 points.</p>
+</div>
+<div id="late-work" class="section level3">
+<h3>Late Work</h3>
+<p>With the exception of Lab 10, there is a two-day grace period (no questions asked) for all assignments. If you will be unable to turn in your assignment by the end of the grace period, you must schedule a meeting with me to establish a timeline for completing it.</p>
+</div>
+<div id="accommodations" class="section level3">
+<h3>Accommodations</h3>
+<p>I will work with the <a href="http://sdc.ucdavis.edu">Student Disability Center</a> (SDC) to make accommodations for documented disabilities. All requests must be initiated through the SDC, but do let me know if your needs are not being adequately addressed. If you think you might have a disability or medical or psychological condition that affects your learning, please do not hesitate to contact the SDC for evaluation.</p>
+</div>
+<div id="classroom-etiquette" class="section level3">
+<h3>Classroom Etiquette</h3>
+<p>This course will involve conversations about historical and contemporary constructions of gender, race, sexuality, and class. These conversations may be difficult, but the classroom is a safe space to discuss and write about these issues. <em>Scholarly disagreements are allowed and debate is encouraged, but your comments should refer to course materials, not another person.</em> You will learn how to support your arguments in writing and conversation with numeric data and textual references. For an up-to-date guide to appropriate and inappropriate terminology, consult the <a href="http://lgbtqia.ucdavis.edu/educated/glossary">UC Davis LGBTQIA+ Resource Center Glossary</a> or the <a href="http://radicalcopyeditor.com">Radical Copy Editor</a>. I expect you to be courteous to yoru classmates and their ideas, to allow them to speak, and to listen to them carefully. If you think a reading or discussion may be trggering to you personally, please notify me in advance (no details necessary) so we can manage the situation to protect your physical and emotional safety.</p>
+</div>
+<div id="academic-integrity" class="section level3">
+<h3>Academic Integrity</h3>
+<p>As in all courses at UC Davis, you will be held to the University’s <a href="http://sja.ucdavis.edu/files/cac.pdf">Code of Academic Conduct</a>, which prohibits all forms of academic misconduct, from outright cheating or plagiarism to inadequate citation. You must acknowledge this Code of Academic Conduct for each course in which you are registered on the <a href="http://participate.ucdavis.edu">Academic Participation</a> website. All work that you submit for this class must be your own and must not have been submitted for a grade in any other class without prior approval from myself and the instructor of the other class. I will report all cases of suspected misconduct to the <a href="http://ossja.ucdavis.edu">Office of Student Support and Judicial Affairs</a>. Please do not hesitate to ask <em>in advance</em> if you are unsure whether something you plan to do violates the code.</p>
+</div>
+<div id="campus-resources" class="section level3">
+<h3>Campus Resources</h3>
+<p>UC Davis offers many resources to help you cope with the challenges of college life. The <a href="http://success.ucdavis.edu/aat/index.html">Academic Assistance and Tutoring Center</a> offers workshops and tutoring for writing and study skills. The <a href="http://care.ucdavis.edu">Center for Advocacy, Resources, and Education</a>, formerly known as the Campus Violence Prevention Program, is the on-campus, confidential resource for all students who have experienced any form of sexual or gender-based violence. The <a href="http://shcs.ucdavis.edu">Student Health and Counseling Services</a> provides a range of resources for psychological and medical support. The <a href="https://ossja.ucdavis.edu/resources">Office of Student Support and Judicial Affairs</a> has information about services related to food, finances, housing, and other necessities. Please do not hesitate to reach out for the help you need to succeed in college.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
