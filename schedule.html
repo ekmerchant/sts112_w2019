@@ -99,6 +99,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -113,7 +116,6 @@ body {
   padding-top: 69px;
   margin-top: -69px;
 }
-
 .section h2 {
   padding-top: 69px;
   margin-top: -69px;
@@ -133,6 +135,43 @@ body {
 .section h6 {
   padding-top: 69px;
   margin-top: -69px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -154,18 +193,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -361,14 +459,14 @@ div.tocify {
 </div>
 <div id="week-4" class="section level2">
 <h2>Week 4</h2>
-<div id="tuesday-1.29.19-the-second-industrial-revolution" class="section level3">
-<h3>Tuesday 1.29.19: The Second Industrial Revolution</h3>
+<div id="tuesday-1.29.19-occupational-change-in-the-u.s.-census" class="section level3">
+<h3>Tuesday 1.29.19: Occupational change in the U.S. Census</h3>
 <ul>
 <li><strong>Lab 3 due before class</strong></li>
 </ul>
 </div>
-<div id="thursday-1.31.19-column-graphs" class="section level3">
-<h3>Thursday 1.31.19: Column graphs</h3>
+<div id="thursday-1.31.19-graphing-data-over-time" class="section level3">
+<h3>Thursday 1.31.19: Graphing data over time</h3>
 <ul>
 <li><strong>Read before class:</strong> <a href="http://www.americanyawp.com/text/18-industrial-america/">Life in Industrial America</a>, The American Yawp.</li>
 <li><strong>Reference:</strong> <a href="https://r4ds.had.co.nz/data-visualisation.html">Data Visualization</a> and <a href="https://r4ds.had.co.nz/exploratory-data-analysis.html">Exploratory Data Analysis</a> in Wickham and Grolemund.</li>
@@ -428,8 +526,8 @@ div.tocify {
 </div>
 <div id="week-8" class="section level2">
 <h2>Week 8</h2>
-<div id="tuesday-2.26.19-civil-rights-and-the-reorganization-of-race" class="section level3">
-<h3>Tuesday 2.26.19: Civil rights and the reorganization of race</h3>
+<div id="tuesday-2.26.19-civil-rights-and-race-statistics" class="section level3">
+<h3>Tuesday 2.26.19: Civil rights and race statistics</h3>
 <ul>
 <li><strong>Lab 7 due before class</strong></li>
 </ul>
@@ -445,14 +543,14 @@ div.tocify {
 </div>
 <div id="week-9" class="section level2">
 <h2>Week 9</h2>
-<div id="tuesday-3.5.19-families-in-the-united-states" class="section level3">
-<h3>Tuesday 3.5.19: Families in the United States</h3>
+<div id="tuesday-3.5.19-families-in-the-u.s.-census" class="section level3">
+<h3>Tuesday 3.5.19: Families in the U.S. Census</h3>
 <ul>
 <li><strong>Lab 8 due before class</strong></li>
 </ul>
 </div>
 <div id="thursday-3.7.19-family-relationships" class="section level3">
-<h3>Thursday 3.7.19: Family Relationships</h3>
+<h3>Thursday 3.7.19: Family relationships</h3>
 <ul>
 <li><strong>Read before class:</strong> Daniel T. Lichter and Zhenchao Qian, 2018, <a href="https://journals.sagepub.com/doi/pdf/10.1177/0002716218760507">Boundary Blurring? Racial Identification Among the Children of Interracial Couples</a>, <em>Annals of the American Academy of Political and Social Science</em> 677: 81-94.<br />
 </li>

@@ -1,11 +1,13 @@
 ---
 title: "Policies"
-output: 
+output:
+  pdf_document:
+    toc: no
   html_document:
-    toc: true    
-    toc_depth: 3
-    toc_float: true
     theme: paper
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
 ---
 ### Communication
 I will hold **weekly office hours on Wednesdays at 10-11 and Thursdays at 11-12 in SSH 1252**. If these times do not work for you, please [schedule a meeting](http://ekmerchant.youcanbook.me) at another time. My office is not easy to find, but [this map](http://emilyklancher.com/Map_SSH1252.pdf) will help. You may also [email me](mailto:ekmerchant@ucdavis.edu) to discuss any aspect of this course. Please put the course number in the subject line of the email. I will generally respond within one business day.

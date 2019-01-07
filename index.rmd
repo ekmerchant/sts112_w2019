@@ -1,13 +1,15 @@
 ---
-title: "STS 112: Visualizing Society"
-subtitle: "University of California, Davis"
-author: "Winter 2019 Instructor: Emily Klancher Merchant"
-output: 
+title: 'STS 112: Visualizing Society'
+author: 'Winter 2019 Instructor: Emily Klancher Merchant'
+subtitle: University of California, Davis
+output:
+  pdf_document:
+    toc: no
   html_document:
-    toc: true    
-    toc_depth: 2
-    toc_float: true
     theme: paper
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
 ---
 
 ![](sts112.png)
