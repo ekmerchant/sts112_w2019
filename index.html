@@ -100,6 +100,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +117,6 @@ body {
   padding-top: 69px;
   margin-top: -69px;
 }
-
 .section h2 {
   padding-top: 69px;
   margin-top: -69px;
@@ -134,6 +136,43 @@ body {
 .section h6 {
   padding-top: 69px;
   margin-top: -69px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +194,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -316,13 +414,22 @@ div.tocify {
 <p><img src="sts112.png" /></p>
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>Data visualization is an important mode of communication today, particularly for conveying information about society and social change. This course will focus on using the R statistical programming language to analyze and visualize social change over time using individual-level data from the United States Census (1870-2010). Through this practice, you will become very familiar with a large and versatile source of data (the <a href="http://usa.ipums.org">Integrated Public Use Microdata Series</a>) and learn critical approaches to working with data that you can apply to other data sets as well. We will examine why and how the data were produced, what material effect they had and continue to have on the world, what information we can glean through their analysis, and how to visually represent various kinds of historical change, such as race formation, internal and international migration, and industrialization. Assignments will give you practice not only with data management, analysis, and visualization, but also with communicating your analysis, results, and interpretation in writing.</p>
+<p>Data visualization is an important mode of analysis and communication today, particularly for investigating and conveying information about society and social change. This course will focus on using the R statistical programming language to analyze and visualize social change over time using individual-level data from the United States Census (1870-2010). Through this practice, you will become very familiar with a large and versatile source of data (the <a href="http://usa.ipums.org">Integrated Public Use Microdata Series</a>) and learn critical approaches to working with data that you can apply to other data sets as well. We will examine why and how the data were produced, what material effect they had and continue to have on the world, what information we can glean through their analysis, and how to visually represent various kinds of historical change, such as race formation, internal and international migration, and industrialization. Assignments will give you practice not only with data management, analysis, and visualization, but also with communicating your analysis, results, and interpretation in writing.</p>
 <p>This course fulfils the <strong>Domestic Diversity</strong> requirement. We will analyze census data to understand the historical processes involved in producing and challenging social inequality along the axes of race, gender, class, and sexuality. Most assignments will require that you grapple with at least one of these dimensions of diversity.</p>
 <p>This course also fulfils the <strong>Quantitative Literacy</strong> requirement. You will gain competency and comfort in working with numerical data and evaluating arguments made on the basis of numerical data. By using historical data to explore social change, you will learn to generate and communicate arguments about numerical data collected to investigate U.S. society.</p>
 </div>
 <div id="course-outcomes" class="section level1">
 <h1>Course Outcomes</h1>
-<p>Assuming that you attend class regularly, complete required readings, and submit assignments on time, you can expect to be able to do the following by the end of the quarter: - Use R to organize, analyze, and visualize individual-level historical census data. - Communicate in writing about data analysis and visualization, from methods to results. - Explain changes over time in the information collected by the census and how those changes relate to historical events and policy debates in U.S. history. - Synthesize individual-level census data with information about the census to develop and communicate arguments about social change and social inequality.</p>
+<p>Assuming that you attend class regularly, complete required readings, and submit assignments on time, you can expect to be able to do the following by the end of the quarter:</p>
+<ul>
+<li>Use R to organize, analyze, and visualize individual-level historical census data.<br />
+</li>
+<li>Communicate in writing about data analysis and visualization, from methods to results.<br />
+</li>
+<li>Explain changes over time in the information collected by the census and how those changes relate to historical events and policy debates in U.S. history.<br />
+</li>
+<li>Synthesize individual-level census data with information about the census to develop and communicate arguments about social change and social inequality.</li>
+</ul>
 </div>
 <div id="course-structure" class="section level1">
 <h1>Course Structure</h1>
