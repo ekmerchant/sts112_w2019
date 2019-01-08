@@ -14,6 +14,7 @@ $~$
 
 ## Week 1
 ### Tuesday 1.8.19: Introduction to the course and JupyterHub
+- [Notebook for Week 1](https://mybinder.org/v2/gh/ekmerchant/sts112/master?filepath=Week_1.ipynb)
 
 ### Thursday 1.10.19: Introduction to the U.S. Census and R
 - **Read before class:** Margo Anderson, 2008, [The Census, Audiences, and Publics](http://emilyklancher.com/teaching/Anderson.html), *Social Science History* 32: 1-18. *Note: This file takes some time to load and is best viewed in Safari. It includes a video clip that will not run in Chrome.*
