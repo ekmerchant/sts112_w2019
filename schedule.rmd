@@ -31,6 +31,8 @@ $~$
 - **Read before class:** [Special issue of *Historical Methods* on the Minnesota historical census projects](readings/Minnesota_Historical_Census.pdf) (highlighted sections only).
 - **Reference:** [Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html) in Wickham and Grolemund.
 
+#### [Notebook 2](r_files/Notebook2.nb.html) | [Lab 2](r_files/Lab2.nb.html)
+
 $~$
 
 ## Week 3
