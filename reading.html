@@ -9,10 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Winter 2019 Instructor: Emily Klancher Merchant" />
 
 
-<title>STS 112: Visualizing Society</title>
+<title>Reading Guides</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -278,7 +277,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -407,44 +406,107 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">STS 112: Visualizing Society</h1>
-<h3 class="subtitle"><em>Tu/Th 9:00 - 10:20 Bainer Hall 1060</em></h3>
-<h4 class="author"><em>Winter 2019 Instructor: Emily Klancher Merchant</em></h4>
+<h1 class="title toc-ignore">Reading Guides</h1>
 
 </div>
 
 
-<p><img src="sts112.png" /></p>
-<div id="overview" class="section level1">
-<h1>Overview</h1>
-<p>Data visualization is an important mode of analysis and communication today, particularly for investigating and conveying information about society and social change. This course will focus on using the R statistical programming language to analyze and visualize social change over time using individual-level data from the United States Census (1870-2010). Through this practice, you will become very familiar with a large and versatile source of data (the <a href="http://usa.ipums.org">Integrated Public Use Microdata Series</a>) and learn critical approaches to working with data that you can apply to other data sets as well. We will examine why and how the data were produced, what material effect they had and continue to have on the world, what information we can glean through their analysis, and how to visually represent various kinds of historical change, such as race formation, internal and international migration, and industrialization. Assignments will give you practice not only with data management, analysis, and visualization, but also with communicating your analysis, results, and interpretation in writing.</p>
-<p>This course fulfils the <strong>Domestic Diversity</strong> requirement. We will analyze census data to understand the historical processes involved in producing and challenging social inequality along the axes of race, gender, class, and sexuality. Most assignments will require that you grapple with at least one of these dimensions of diversity.</p>
-<p>This course also fulfils the <strong>Quantitative Literacy</strong> requirement. You will gain competency and comfort in working with numerical data and evaluating arguments made on the basis of numerical data. By using historical data to explore social change, you will learn to generate and communicate arguments about numerical data collected to investigate U.S. society.</p>
+<div id="week-1" class="section level2">
+<h2>Week 1</h2>
+<div id="the-census-audiences-and-publics" class="section level3">
+<h3><a href="http://emilyklancher.com/teaching/Anderson.html">The Census, Audiences, and Publics</a></h3>
+<p><strong>Margo Anderson, 2008, <em>Social Science History</em> 32: 1-18.</strong></p>
+<p>This file takes some time to load and is best viewed in Safari. It includes a video clip that will not run in Chrome. Look at the images as you read, and try to see what Anderson is seeing. Do you see anything she doesn’t mention?</p>
 </div>
-<div id="course-outcomes" class="section level1">
-<h1>Course Outcomes</h1>
-<p>Assuming that you attend class regularly, complete required readings, and submit assignments on time, you can expect to be able to do the following by the end of the quarter:</p>
+</div>
+<div id="week-2" class="section level2">
+<h2>Week 2</h2>
+<div id="minnesota-historical-census-projects" class="section level3">
+<h3><a href="readings/Minnesota_Historical_Census.pdf">Minnesota Historical Census Projects</a></h3>
+<p><strong>Special issue of <em>Historical Methods</em>, 1995 (highlighted sections only).</strong></p>
+<p>As you read, pay attention to the following things:</p>
 <ul>
-<li>Use R to organize, analyze, and visualize individual-level historical census data.<br />
-</li>
-<li>Communicate in writing about data analysis and visualization, from methods to results.<br />
-</li>
-<li>Explain changes over time in the information collected by the census and how those changes relate to historical events and policy debates in U.S. history.<br />
-</li>
-<li>Synthesize individual-level census data with information about the census to develop and communicate arguments about social change and social inequality.</li>
+<li>What is the difference between published (aggregate, tabular) census data and unpublished census manuscripts (microdata)?</li>
+<li>What are the three key strengths of the IPUMS national census files?</li>
+<li>When and why did the census begin to collect information about individuals rather than households?</li>
+<li>How did disputes over slavery affect the 1850 census?</li>
+<li>What was the conroversy over the 1870 census? Why were new questions proposed, and why did Congress resist?</li>
+<li>How did the audience for the census change at the end of the nineteenth century? How does this relate to last week’s reading by Margo Anderson?</li>
+<li>How did census-taking change in 1960?</li>
+<li>Why is it important to get public input into the development of census schedules? How does that relate to the upcoming census in 2020?</li>
+</ul>
+<p>These questions will be important for Lab 2:</p>
+<ul>
+<li>When and why were year and month of birth added to the census schedule? Did they solve the problem they were supposed to solve?</li>
+<li>Why are there two different coding schemes for relationship to household head? How was this relationship determined before 1880?</li>
+<li>What are the constructed variables? How are they constructed? What information do they provide? Why and how might you use them?</li>
 </ul>
 </div>
-<div id="course-structure" class="section level1">
-<h1>Course Structure</h1>
-<p>This course will combine lecture, discussion, and hands-on practice with data analysis and visualization. All coding will be done in JupyterHub, a cloud-based environment that you can access with a browser from any internet-enabled device. Please bring your device to class.</p>
 </div>
-<div id="readings" class="section level1">
-<h1>Readings</h1>
-<p>Readings should be completed before class on the day noted in the course schedule. You do not need to purchase any books for this class: all readings are linked from the schedule, but most links will only work if you are on campus or connected through <a href="https://www.library.ucdavis.edu/service/connect-from-off-campus/">VPN</a>. Readings listed as “Reference” may be helpful but are not required. These are from <a href="https://r4ds.had.co.nz/">R for Data Science</a> by Garrett Grolemund and Hadley Wickham.</p>
+<div id="week-3" class="section level2">
+<h2>Week 3</h2>
+<div id="racial-reorganization-and-the-united-states-census-1850-1930-mulattoes-half-breeds-mixed-parentage-hindoos-and-the-mexican-race" class="section level3">
+<h3><a href="https://doi.org/10.1017/S0898588X08000047">Racial Reorganization and the United States Census, 1850-1930: Mulattoes, Half-Breeds, Mixed Parentage, Hindoos, and the Mexican Race</a></h3>
+<p><strong>Jennifer L. Hochschild and Brenna Marea Powell, 2008, <em>Studies in American Political Development</em> 22: 59-96.</strong></p>
 </div>
-<div id="assignments-and-grading" class="section level1">
-<h1>Assignments and Grading</h1>
-<p>This course involves a total of 10 weekly lab assignments. The first nine are due on Tuesday in weeks 2-10; the last one is due at the time of our final exam. These will take the form of Jupyter notebooks, and will involve writing code to organize, analyze, and visualize data, and writing text to communcate your methods and findings. Each of these is worth 10 points. I will drop your lowest lab score (even if it is a 10) and replace it with your attendance and participation score (1 point per week). The course is worth a total of 100 points, and grades will be assigned as follows: A+[100,97), A[97,93), A-[93,90), B+[90,87), B[87,83), B-[83,80), C+[80,77), C[77,73), C-[73,70), D+[70,67), D[67,63), D-[63,60), F[60,0]</p>
+</div>
+<div id="week-4" class="section level2">
+<h2>Week 4</h2>
+<div id="life-in-industrial-america" class="section level3">
+<h3><a href="http://www.americanyawp.com/text/18-industrial-america/">Life in Industrial America</a></h3>
+<p><strong>The American Yawp.</strong></p>
+<p>This is a textbook and is quite straightforward. Read to get a sense of how the kind of work people did and the industries they worked in changed over the second half of the nineteenth century and first half of the twentieth.</p>
+</div>
+</div>
+<div id="week-5" class="section level2">
+<h2>Week 5</h2>
+<div id="womens-work-and-womens-households-gender-bias-in-the-u.s.-census" class="section level3">
+<h3><a href="https://www.jstor.org/stable/pdf/40970556.pdf">Women’s Work and Women’s Households: Gender Bias in the U.S. Census</a></h3>
+<p><strong>Nancy Folbre and Marjorie Abel, 1989, <em>Social Research</em> 56: 545-569.</strong></p>
+</div>
+<div id="decapitating-the-u.s.-census-bureaus-head-of-household-feminist-mobilization-in-the-1970s" class="section level3">
+<h3><a href="https://www.tandfonline.com/doi/pdf/10.1080/135457098338356">Decapitating the U.S. Census Bureau’s “Head of Household”: Feminist mobilization in the 1970s</a></h3>
+<p><strong>Harriet B. Presser, 1998, <em>Feminist Economics</em> 4: 145-158.</strong></p>
+</div>
+</div>
+<div id="week-6" class="section level2">
+<h2>Week 6</h2>
+<div id="the-architecture-of-race-in-american-immigration-law-a-reexamination-of-the-immigration-act-of-1924" class="section level3">
+<h3><a href="https://www.jstor.org/stable/pdf/2567407.pdf">The Architecture of Race in American Immigration Law: A Reexamination of the Immigration Act of 1924</a></h3>
+<p><strong>Mae M. Ngai, 1999, <em>Journal of American History</em> 86: 67-92.</strong></p>
+</div>
+</div>
+<div id="week-7" class="section level2">
+<h2>Week 7</h2>
+<div id="chapter-1-a-century-of-migration" class="section level3">
+<h3><a href="http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=413303">Chapter 1: A Century of Migration</a></h3>
+<p><strong>James N. Gregory, 2005, <em>The Southern Diaspora: How the Great Migrations of Black and White Southerners Transformed America</em> (Chapel Hill: University of North Carolina Press).</strong></p>
+</div>
+</div>
+<div id="week-8" class="section level2">
+<h2>Week 8</h2>
+<div id="ethnicity-and-the-boundaries-of-race-rereading-directive-15" class="section level3">
+<h3><a href="https://doi.org/10.1162/0011526053124352">Ethnicity and the Boundaries of Race: Rereading Directive 15</a></h3>
+<p><strong>Victoria Hattam, 2006, <em>Daedalus</em> 134: 61-69.</strong></p>
+</div>
+<div id="doing-the-dirty-work-gender-race-and-reproductive-labor-in-historical-perspective" class="section level3">
+<h3><a href="https://journals.sagepub.com/doi/pdf/10.1177/0891243207300764">Doing the Dirty Work: Gender, Race, and Reproductive Labor in Historical Perspective</a></h3>
+<p><strong>Mignon Duffy, 2007, <em>Gender and Society</em> 21: 313-336.</strong></p>
+</div>
+</div>
+<div id="week-9" class="section level2">
+<h2>Week 9</h2>
+<div id="boundary-blurring-racial-identification-among-the-children-of-interracial-couples" class="section level3">
+<h3><a href="https://journals.sagepub.com/doi/pdf/10.1177/0002716218760507">Boundary Blurring? Racial Identification Among the Children of Interracial Couples</a></h3>
+<p><strong>Daniel T. Lichter and Zhenchao Qian, 2018, <em>Annals of the American Academy of Political and Social Science</em> 677: 81-94.</strong></p>
+</div>
+</div>
+<div id="week-10" class="section level2">
+<h2>Week 10</h2>
+<div id="the-measurement-of-same-sex-unmarried-partner-couples-in-the-2000-u.s.-census" class="section level3">
+<h3><a href="https://escholarship.org/uc/item/72r1q94b">The Measurement of Same-Sex Unmarried Partner Couples in the 2000 U.S. Census</a></h3>
+<p><strong>Dan Black et al., 2007, California Center for Population Research.</strong></p>
+</div>
 </div>
 
 

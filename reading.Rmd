@@ -1,0 +1,75 @@
+---
+title: "Reading Guides"
+output:
+  html_document:
+    theme: paper
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+## Week 1
+### [The Census, Audiences, and Publics](http://emilyklancher.com/teaching/Anderson.html)
+**Margo Anderson, 2008, *Social Science History* 32: 1-18.**
+
+This file takes some time to load and is best viewed in Safari. It includes a video clip that will not run in Chrome. Look at the images as you read, and try to see what Anderson is seeing. Do you see anything she doesn't mention?
+
+## Week 2
+###  [Minnesota Historical Census Projects](readings/Minnesota_Historical_Census.pdf) 
+**Special issue of *Historical Methods*, 1995 (highlighted sections only).**
+
+As you read, pay attention to the following things:
+
+- What is the difference between published (aggregate, tabular) census data and unpublished census manuscripts (microdata)?
+- What are the three key strengths of the IPUMS national census files?
+- When and why did the census begin to collect information about individuals rather than households?
+- How did disputes over slavery affect the 1850 census?
+- What was the conroversy over the 1870 census? Why were new questions proposed, and why did Congress resist?
+- How did the audience for the census change at the end of the nineteenth century? How does this relate to last week's reading by Margo Anderson?
+- How did census-taking change in 1960?
+- Why is it important to get public input into the development of census schedules? How does that relate to the upcoming census in 2020?
+
+These questions will be important for Lab 2:
+
+- When and why were year and month of birth added to the census schedule? Did they solve the problem they were supposed to solve?
+- Why are there two different coding schemes for relationship to household head? How was this relationship determined before 1880?
+- What are the constructed variables? How are they constructed? What information do they provide? Why and how might you use them?
+
+## Week 3
+### [Racial Reorganization and the United States Census, 1850-1930: Mulattoes, Half-Breeds, Mixed Parentage, Hindoos, and the Mexican Race](https://doi.org/10.1017/S0898588X08000047)
+**Jennifer L. Hochschild and Brenna Marea Powell, 2008, *Studies in American Political Development* 22: 59-96.**
+
+## Week 4
+### [Life in Industrial America](http://www.americanyawp.com/text/18-industrial-america/)
+**The American Yawp.**
+
+This is a textbook and is quite straightforward. Read to get a sense of how the kind of work people did and the industries they worked in changed over the second half of the nineteenth century and first half of the twentieth.
+
+## Week 5
+### [Women's Work and Women's Households: Gender Bias in the U.S. Census](https://www.jstor.org/stable/pdf/40970556.pdf) 
+**Nancy Folbre and Marjorie Abel, 1989, *Social Research* 56: 545-569.** 
+
+### [Decapitating the U.S. Census Bureau's "Head of Household": Feminist mobilization in the 1970s](https://www.tandfonline.com/doi/pdf/10.1080/135457098338356)
+**Harriet B. Presser, 1998, *Feminist Economics* 4: 145-158.**
+
+## Week 6
+### [The Architecture of Race in American Immigration Law: A Reexamination of the Immigration Act of 1924](https://www.jstor.org/stable/pdf/2567407.pdf)
+**Mae M. Ngai, 1999, *Journal of American History* 86: 67-92.**
+
+## Week 7
+### [Chapter 1: A Century of Migration](http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=413303)
+**James N. Gregory, 2005, *The Southern Diaspora: How the Great Migrations of Black and White Southerners Transformed America* (Chapel Hill: University of North Carolina Press).**
+
+## Week 8
+### [Ethnicity and the Boundaries of Race: Rereading Directive 15](https://doi.org/10.1162/0011526053124352)
+**Victoria Hattam, 2006, *Daedalus* 134: 61-69.** 
+
+### [Doing the Dirty Work: Gender, Race, and Reproductive Labor in Historical Perspective](https://journals.sagepub.com/doi/pdf/10.1177/0891243207300764)
+**Mignon Duffy, 2007, *Gender and Society* 21: 313-336.**
+
+## Week 9
+### [Boundary Blurring? Racial Identification Among the Children of Interracial Couples](https://journals.sagepub.com/doi/pdf/10.1177/0002716218760507)
+**Daniel T. Lichter and Zhenchao Qian, 2018, *Annals of the American Academy of Political and Social Science* 677: 81-94.**
+
+## Week 10
+### [The Measurement of Same-Sex Unmarried Partner Couples in the 2000 U.S. Census](https://escholarship.org/uc/item/72r1q94b)
+**Dan Black et al., 2007, California Center for Population Research.**

@@ -6,8 +6,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
-    toc: no
 ---
 
 $~$
@@ -60,7 +58,7 @@ $~$
 - **Lab 4 due before class**  
 
 ### Thursday 2.7.19: Tracking women's labor force participation
-- **Read before class:** Nancy Folbre and Marjorie Abel, 1989, [Women's Work and Women's Households: Gender Bias in the U.S. Census](https://www.jstor.org/stable/pdf/40970556.pdf), *Social Research* 56: 545-569.; Harriet B. Presser, 1998, [Decapitating the U.S. Census Bureau's "Head of Household": Feminist mobilization in the 1970s](https://www.tandfonline.com/doi/pdf/10.1080/135457098338356), *Feminist Economics* 4: 145-158
+- **Read before class:** Nancy Folbre and Marjorie Abel, 1989, [Women's Work and Women's Households: Gender Bias in the U.S. Census](https://www.jstor.org/stable/pdf/40970556.pdf), *Social Research* 56: 545-569.; Harriet B. Presser, 1998, [Decapitating the U.S. Census Bureau's "Head of Household": Feminist mobilization in the 1970s](https://www.tandfonline.com/doi/pdf/10.1080/135457098338356), *Feminist Economics* 4: 145-158.
 - **Reference:** [Data Visualization](https://r4ds.had.co.nz/data-visualisation.html) and [Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html) in Wickham and Grolemund.
 
 $~$

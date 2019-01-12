@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "Policies"
       href: policies.html
+    - text: "Reading"
+      href: reading.html
     - text: "Schedule"
       href: schedule.html
     - text: "Email Prof. M"
