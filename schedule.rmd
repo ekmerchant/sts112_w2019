@@ -26,6 +26,7 @@ $~$
 - **Lab 1 due before class**
 
 ### Thursday 1.17.19: Working with IPUMS data
+- **Before class:** Install [R](https://cran.cnr.berkeley.edu/) and [RStudio](https://www.rstudio.com/products/rstudio/download/). You will need to install R before you install RStudio. For RStudio, be sure to get the free version of RStudio Desktop. If you would like to see the process on a mac, watch [this video](https://youtu.be/EmZqlcKkJMM).
 - **Read before class:** [Special issue of *Historical Methods* on the Minnesota historical census projects](readings/Minnesota_Historical_Census.pdf) (highlighted sections only).
 - **Reference:** [Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html) in Wickham and Grolemund.
 
