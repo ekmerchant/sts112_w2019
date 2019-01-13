@@ -36,7 +36,31 @@ These questions will be important for Lab 2:
 
 ## Week 3
 ### [Racial Reorganization and the United States Census, 1850-1930: Mulattoes, Half-Breeds, Mixed Parentage, Hindoos, and the Mexican Race](https://doi.org/10.1017/S0898588X08000047)
-**Jennifer L. Hochschild and Brenna Marea Powell, 2008, *Studies in American Political Development* 22: 59-96.**
+**Jennifer L. Hochschild and Brenna Marea Powell, 2008, *Studies in American Political Development* 22: 59-96.**  
+This is an outline of the article, with questions to guide your reading of each section. You do not have to be able to formulate a coherent answer to these questions, but these are the things you should pay attention to.
+
+- Introduction (pp. 59-61)
+  + What is the authors' main argument?
+  + What are their two empirical research questions?
+  + Why do they focus on the census?
+  + What do the authors mean by "racial reorganization," and why did the United States experience it (according to the authors) between the Civil War and World War II?
+- Theoretical framework establishing the relationship between the census and the racial order (pp. 61-65)
+  + What do the authors mean by "racial order"? What are its two dimensions? How did it change over this period?
+  + How does a Census contribute to creation, maintenance, and transformation of the racial order?
+- Census Bureau's role in reorganizing the U.S. racial order from the 1850 census to the 1930 census (pp. 65 - 81, with subsections for the major racial categories)
+  + What three general factors ("motivations") shaped the race classification in any given census? How do the authors define each one, and what role does each one play?
+  + Why did the census add a "mulatto" category in 1850? Why did it drop this category in 1930?
+  + What was the relationship between Asian race categories and immigration/naturalization?
+  + Debates over the social and political position of European immigrants are not reflected in racial categories. Where do we see them? Why there instead of race?
+  + What is the maning of the phrase "Indians not taxed" in Article 1, Section 2 of the Constitution?
+  + How has U.S. policy toward Native Americans influenced the way they are classified in the census?
+  + How and why did the classification of Mexican Americans change between the 1920, 1930, and 1940 censuses? What was at stake in this classification?
+- Demographic change between 1850 and 1930 (pp. 82-87)
+  + The authors attribute the "racial reorganization" of the 1850-1840 period to "demographic upheaval" (82). What historical events and changes do they include in that upheaval?
+  + What historical events and changes stabilized the demographic and racial order after 1940?
+- Conclusion (pp. 87-90)
+  + Why do the authors suggest that we may again be in a period of racial reorganization?
+  + This article was written 10 years ago. Do the "current" demographic and racial issues they describe still seem current? Why or why not?
 
 ## Week 4
 ### [Life in Industrial America](http://www.americanyawp.com/text/18-industrial-america/)
