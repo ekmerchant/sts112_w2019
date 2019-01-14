@@ -42,6 +42,8 @@ $~$
 - **Read before class:** Jennifer L. Hochschild and Brenna Marea Powell, 2008, [Racial Reorganization and the United States Census, 1850-1930: Mulattoes, Half-Breeds, Mixed Parentage, Hindoos, and the Mexican Race](https://doi.org/10.1017/S0898588X08000047), *Studies in American Political Development* 22: 59-96.
 - **Reference:** [Data Transformation](https://r4ds.had.co.nz/transform.html) in Wickham and Grolemund.
 
+#### [Notebook 3](r_files/Notebook3.nb.html) | [Lab 3](r_files/Lab3.nb.html)
+
 $~$
 
 ## Week 4
