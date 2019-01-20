@@ -95,6 +95,15 @@ This article is about the National Origins Act of 1924, which sharply limited im
 ### [Chapter 1: A Century of Migration](http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=413303)
 **James N. Gregory, 2005, *The Southern Diaspora: How the Great Migrations of Black and White Southerners Transformed America* (Chapel Hill: University of North Carolina Press).**
 
+As you read Chapter 1 of *The Southern Diaspora*, think about how this reading connects to our earlier readings about race, industrialization, and immigration. Focus on the following questions:
+
+- What does Gregory mean by "Southern Diaspora"?
+- Who was migrating? When? Where were they going? Why?
+- How did the experience of migration out of the South differ for black and white southerners?
+- How does Gregory describe the relationship between a diaspora and an individual move?
+- How does Gregory utilize IPUMS data to make his points?
+- Gregory does not map his data. What kind of maps would have been useful?
+
 ## Week 8
 ### [Ethnicity and the Boundaries of Race: Rereading Directive 15](https://doi.org/10.1162/0011526053124352)
 **Victoria Hattam, 2006, *Daedalus* 134: 61-69.** 
