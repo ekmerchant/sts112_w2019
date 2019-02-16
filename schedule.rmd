@@ -90,7 +90,7 @@ $~$
 - **Lab 7 due before class**  
 
 ### Thursday 2.28.19: Income analysis
-- **Read before class:** Victoria Hattam, 2006, [Ethnicity and the Boundaries of Race: Rereading Directive 15](https://doi.org/10.1162/0011526053124352), *Daedalus* 134: 61-69; Mignon Duffy, 2007, [Doing the Dirty Work: Gender, Race, and Reproductive Labor in Historical Perspective](https://journals.sagepub.com/doi/pdf/10.1177/0891243207300764), *Gender and Society* 21: 313-336.
+- **Read before class:** Victoria Hattam, 2006, [Ethnicity and the Boundaries of Race: Rereading Directive 15](https://www.jstor.org/stable/20027961), *Daedalus* 134: 61-69; Mignon Duffy, 2007, [Doing the Dirty Work: Gender, Race, and Reproductive Labor in Historical Perspective](https://journals.sagepub.com/doi/pdf/10.1177/0891243207300764), *Gender and Society* 21: 313-336.
 - **Reference:** [Data Visualization](https://r4ds.had.co.nz/data-visualisation.html) and [Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html) in Wickham and Grolemund.
 
 $~$
