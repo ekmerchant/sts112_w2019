@@ -133,3 +133,5 @@ As you read this article, note each time the authors make an assumption about ho
 ## Week 10
 ### [The Measurement of Same-Sex Unmarried Partner Couples in the 2000 U.S. Census](https://escholarship.org/uc/item/72r1q94b)
 **Dan Black et al., 2007, California Center for Population Research.**
+
+As you read this article, think about how you would investigate or illustrate the points the authors are making using IPUMS data for 2000. That is what we will be doing in the lab!
